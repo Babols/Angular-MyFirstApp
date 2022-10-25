@@ -18,8 +18,6 @@ export class UserProfileComponent implements OnInit {
   hidden() {
     return this.showAge = !this.showAge;
   }
-    
-  constructor() { }
 
   ngOnInit(): void {
   }
