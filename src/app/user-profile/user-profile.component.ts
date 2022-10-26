@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { User } from '../user';
 
 @Component({
   selector: 'app-user-profile',
@@ -7,13 +6,12 @@ import { User } from '../user';
   styleUrls: ['./user-profile.component.css']
 })
 export class UserProfileComponent implements OnInit {
-  user: User = {
-    name : 'Doe',
-    firstName : 'John',
-    age : 25,
-    quote : '',
-    photo : 'https://randomuser.me/api/portraits/lego/2.jpg'
-  };
+    name: string = 'Doe';
+    firstName: string = 'John';
+    age: number = 25;
+    quote: string = '';
+    photo: string = 'https://randomuser.me/api/portraits/lego/2.jpg'
+  
   showAge = false;
   hidden() {
     return this.showAge = !this.showAge;

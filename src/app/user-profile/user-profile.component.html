@@ -1,13 +1,13 @@
 <div>
-  <img [src]="user.photo" [alt]="user.name" />
-  <p>Name : {{ user.name }}</p>
-  <p>FirstName : {{ user.firstName }}</p>
-  <p class="age" *ngIf="showAge === true">Age : {{ user.age }} ans</p>
+  <img [src]="photo" [alt]="name" />
+  <p>Name : {{ name }}</p>
+  <p>FirstName : {{ firstName }}</p>
+  <p class="age" *ngIf="showAge === true">Age : {{ age }} ans</p>
   <button type="button" (click)="hidden()">
     <span *ngIf="showAge === false">Voir age</span>
     <span *ngIf="showAge === true"> Cacher age</span>
   </button>
-  <p>Quote :{{ user.quote }}</p>
-  <input placeholder="Enter your quote" type="text" [(ngModel)]="user.quote" />
+  <p>Quote :{{ quote }}</p>
+  <input placeholder="Enter your quote" type="text" [(ngModel)]="quote" />
 
 </div>

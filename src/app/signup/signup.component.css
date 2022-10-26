@@ -1,0 +1,29 @@
+span {
+  color: red;
+}
+
+form {
+  width: 30vw;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+fieldset {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 10px;
+}
+
+button {
+    margin-top: 10px;
+}
+
+#email {
+margin-left: 20px;
+}
