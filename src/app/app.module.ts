@@ -7,6 +7,8 @@ import { AppComponent } from './app.component';
 import { UserProfileComponent } from './user-profile/user-profile.component';
 import { SignupComponent } from './signup/signup.component';
 import { MenuComponent } from './menu/menu.component';
+import { DeveloperComponent } from './developer/developer.component';
+import { SkillComponent } from './skill/skill.component';
 
 @NgModule({
   declarations: [
@@ -14,6 +16,8 @@ import { MenuComponent } from './menu/menu.component';
     UserProfileComponent,
     SignupComponent,
     MenuComponent,
+    DeveloperComponent,
+    SkillComponent,
   ],
   imports: [
     BrowserModule,
