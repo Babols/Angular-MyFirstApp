@@ -3,6 +3,10 @@
  <p> FirstName : {{ modelDeveloper.firstName }} </p> 
  <p> Age : {{ modelDeveloper.age }} </p>
  <p> Gender : {{ modelDeveloper.gender }} </p>
- <p> Bio : {{ modelDeveloper.bio }} </p>
- <app-skill *ngFor="let skill of modelDeveloper.skills" [mSkill]="skill"></app-skill>
+ <p> Bio : {{ modelDeveloper.bio }} </p>   <ul>
+    <li *ngFor="let skill of modelDeveloper.skills">
+      <app-skill [mSkill]="skill"></app-skill>
+    </li>
+  </ul>
+ <!-- <app-skill *ngFor="let skill of modelDeveloper.skills" [mSkill]="skill"></app-skill> -->
 </div>
